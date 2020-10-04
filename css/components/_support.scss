@@ -1,0 +1,114 @@
+#support-center-section {
+    margin-bottom:80px;
+    padding:15px;
+
+    // Контейнер для текста, кнопки, фоновой анимации
+    .support-center{
+        background-color:#F3EFFF;
+        border-radius:20px;
+        overflow: hidden;
+    }
+
+    // Внутренний контейнер
+    .support-center__content {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:60px 20px;
+        text-align: center;
+        
+    
+        .support-center__text {
+            font-size:1.6rem;
+            font-weight: 700;
+            color:#9672FF;
+            z-index: 1;
+            margin-bottom:20px;
+            
+            span {
+                font-weight: 900;
+                color:#4317C0;
+                
+            }
+        }
+    
+        .support-center__btn {
+            padding: 20px 28px;
+            z-index: 1;
+            max-width: 300px;
+            width: 100%;
+        }
+    }   
+}
+
+
+
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    #support-center-section {
+        margin-bottom:140px;
+        padding:0;
+    
+        // Контейнер для текста, кнопки, фоновой анимации
+        .support-center{
+            border-radius:20px;
+        }
+    
+        // Внутренний контейнер
+        .support-center__content {
+            flex-direction: row;
+            align-items: center;
+            padding:60px 20px;
+            
+        
+            .support-center__text {
+                font-size:2.1rem;
+                z-index: 1;
+                text-align: left;
+                
+                span {   
+                }
+            }
+        
+            .support-center__btn {
+                padding: 20px 28px;
+                z-index: 1;
+                width: auto;
+            }
+        }   
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #support-center-section {
+    
+        // Внутренний контейнер
+        .support-center__content {
+            padding:60px 0px;
+            
+        
+            .support-center__text {
+                font-size:2.4rem;
+            }
+        
+        }   
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

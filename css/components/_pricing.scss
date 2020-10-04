@@ -1,0 +1,317 @@
+#pricing-section {
+    position: relative;
+}
+
+.pricing-table {
+    background-color:#FFF;
+    padding:0;
+    padding-top:0;
+    padding-right:0;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0, .09);
+    opacity:0.2;
+    margin-bottom:140px;
+    transition: all .7s ease;
+
+    .pricing__head {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pricing__head-toggler {
+
+        }
+
+        .pricing__head-biling {
+            display:flex;
+        }
+    }
+}
+
+.pricing-animate {
+    // transform: translateY(-30vh);
+    margin-top:-30vh;
+    opacity:1;
+}
+
+.pricing__head-biling-item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px;
+    padding-top:25px;
+
+    .biling-item__price {
+        font-weight:600;
+        font-size:4rem;
+        position: relative;
+
+        >span {
+            position: absolute;
+            font-size: 1.6rem;
+            top: 5px;
+            left: -21px;
+        }
+    }
+
+    .biling-item__details {
+        margin-bottom:40px;
+    }
+}
+
+.biling-item_active {
+    background-color: $primary-color;
+    margin-top: -14px;
+    padding-top: 38px;
+    border-radius: 10px;
+
+    color:#fff;
+}
+
+// Класс для прилипания к верху блока
+.sticky {
+    
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    box-shadow: 0px 4px 5px 0px rgba(3, 3, 3, 0.07);
+
+    .pricing-table__content__price, .pricing-table__content__details {
+        max-height: 0 !important;
+        opacity:0 !important;
+        // display:none;
+    }
+}
+
+
+
+
+.pricing-table {
+
+    // Верхняя часть таблицы
+    .pricing-table__head {
+        position: sticky;
+        display:grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom:30px;
+
+        transition:0.3s;
+
+        // Переключатель
+        .pricing-table__toggler {
+            
+            grid-column: span 3;
+            display:none;
+        }
+
+        
+        // Варианты подписки
+        .pricing-table__head__content {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding:25px 0px;
+
+            .btn {
+                padding:12px 10px;
+            }
+
+
+            // Заголовок e.g - Free/premium...
+            .pricing-table__content__heading {
+                font-size: 1.3125rem;
+                margin-bottom: 1.25rem;
+            }
+
+            // Цена e.g - 0/29$...
+            .pricing-table__content__price {
+                font-weight:600;
+                font-size:2.2rem;
+                position: relative;
+                opacity:1;
+                transition: .3s;
+                max-height: 1000px;
+
+                // знак доллара в цене
+                >span {
+                    position: absolute;
+                    font-size: 1.6rem;
+                    top: 5px;
+                    left: -21px;
+                }
+            }
+
+            // Текст под ценой e.g - per month
+            .pricing-table__content__details {
+                margin-bottom:20px;
+            }
+
+            // Стиль по умолчанию для помесячной тарификации
+            .pricing-table__content__price_month {
+                display:none;
+            }
+        }
+
+        // Избранный вариант подписки
+        .pricing-table__head__content_featured {
+            background-color: $primary-color;
+            color:#fff;
+            border-radius: 15px;
+            margin: -5px 0;
+            padding: 30px 0;
+
+            .btn {
+                background-color:#fff;
+                color:$primary-color;
+
+                &:hover {
+                    background-color:#333;
+                    color:inherit;
+                }
+            }
+        }
+    }
+
+    // Контент таблицы
+    .pricing-table__body {
+        display:grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+
+        // Строчка таблицы
+        .pricing-table__item {
+            display:grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            padding:25px 0;
+
+            position:relative;
+            
+            &:not(:last-child) {
+                &:after {
+                    content: "";
+                    background: $mild-accent;
+                    position: absolute;
+                    bottom:0;
+                    left: 3%;
+                    height: 2px;
+                    width: 94%;
+                }
+            }
+            
+
+            // Заголовок строки
+            .pricing-table__item__header {
+                grid-column: span 3;
+                padding:20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h3 {
+                    font-size:0.9375rem;
+                    margin:0;
+                }
+            }
+
+            // Наличие/отсутствие поддержки
+            .pricing-table__item__presence {
+                text-align: center;
+                span {
+                    background-color: #F9F7FF;
+                    border-radius: 100%;
+                    padding: 8px;
+                    color: #6A35FF;
+                }
+            }
+        }
+
+        // Графа расценок для мобильных устройств
+        .pricing-table__rates {
+            display:grid;
+            padding: 10px 0;
+            // background-color: $mild-accent;
+
+            .pricing-table__item__header {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+
+            .pricing-table__item-rates span{
+                font-size: 25px;
+                font-weight: 500;
+                background-color: transparent;
+                border-radius: none;
+                padding: 8px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .pricing-table {
+        .pricing-table__head {
+            display:grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, 1fr);
+
+            .pricing-table__toggler {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                grid-column: span 1;
+            }
+        }
+
+        .pricing-table__body {
+            // Графа расценок для мобильных
+            .pricing-table__rates {
+                display:none;
+            }
+
+            .pricing-table__item {
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(4, 1fr);
+    
+                .pricing-table__item__header {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .pricing-table{
+        .pricing-table__head {
+            .pricing-table__head__content{
+                .btn {
+                    padding: 12px 28px;
+                }
+            }
+        }  
+    }
+
+    .pricing-table .pricing-table__head .pricing-table__head__content_featured {
+        margin: -15px 0;
+        padding: 40px 0;
+    }
+
+    .pricing-table .pricing-table__head .pricing-table__head__content .pricing-table__content__price {
+        font-size: 4rem;
+    }
+}

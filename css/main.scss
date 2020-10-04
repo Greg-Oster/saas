@@ -1,0 +1,347 @@
+$bg-color: #fff7f2;
+$p-color: #2d3958;
+$footer-bg: #182135;
+$primary-color: #6a35ff;
+// $accent-color:#7B88A8;
+$accent-color: #5b6888;
+$mild-accent: #f3f4fa;
+$main-font: "Roboto", sans-serif;
+$light-accent: #e6eaf5;
+
+$opacity-bg-font_start: rgba(161, 182, 228, 0.85);
+$opacity-bg-font_end: rgba(161, 182, 228, 1);
+
+$link-hover: #3a4b79;
+
+@import "footer/footer";
+@import "footer/footer-nav";
+@import "footer/social-links";
+@import "components/btn";
+@import "components/input";
+@import "components/support";
+@import "components/faq";
+@import "components/pricing";
+@import "components/toggler";
+@import "components/bubles";
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?42affc");
+  src: url("../fonts/icomoon.eot?42affc#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?42affc") format("truetype"),
+    url("../fonts/icomoon.woff?42affc") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.6875rem;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* <span class="icon-dribbble"></span> */
+
+.icon-dribbble:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+.icon-Intsagram:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\e903";
+}
+
+html {
+  color: #333;
+
+  body {
+    font-family: $main-font;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+.description {
+  font-size: 1.125rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+th {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $p-color;
+  padding: 24px 0;
+  width: 30%;
+
+  h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    .material-icons {
+      color: #ffffff;
+      background-color: #dcd8e8;
+      padding: 0;
+      margin-left: 12px;
+      font-size: 20px;
+    }
+  }
+}
+
+td {
+  text-align: center;
+}
+
+tr {
+  &:not(:last-child) {
+    border-bottom: 1px solid #e6eaf5;
+  }
+}
+
+header {
+  height: 100vh;
+  background-color: $bg-color;
+  overflow: hidden;
+
+  .header-content {
+    // margin-top:182px;
+    margin-top: 25vh;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 576px) {
+  header .header-content h1 {
+    font-size: 2.4rem;
+  }
+}
+
+#header-animation {
+  position: absolute;
+  // height:100vh;
+  bottom: 0;
+  z-index: 0;
+
+  svg {
+    g {
+      g:nth-child(1) rect {
+        fill: transparent;
+        // fill: #999;
+      }
+
+      g:nth-child(2) rect {
+        fill: #ffe7d7;
+      }
+    }
+  }
+}
+
+.navbar {
+  padding: 2.5rem 1rem;
+  margin-bottom: 3.4375rem;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  transition: 0.5s;
+
+  .navbar-toggler {
+    span {
+      font-size: 30px;
+      color: $primary-color;
+    }
+  }
+}
+
+a {
+  color: $p-color;
+  font-weight: 500;
+  transition: color 0.2s;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-hover;
+  }
+}
+
+.sticky {
+  background-color: #fff;
+  padding: 1rem 1rem;
+  box-shadow: 0 1px 10px rgba(191, 191, 191, 0.18);
+}
+
+.hide {
+  display: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.navbar-open {
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(191, 191, 191, 0.15);
+
+  .navbar-nav .nav-item {
+    padding: 0;
+
+    .nav-link {
+      padding: 15px 40px;
+    }
+  }
+
+  .navbar-nav:nth-child(2) .nav-item:not(:last-child) {
+    padding-right: 0px;
+  }
+}
+
+.login {
+  color: $primary-color;
+}
+
+.navbar-nav:nth-child(2) .nav-item:not(:last-child) {
+  padding-right: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2.1875rem;
+  font-weight: 900;
+  font-size: 55px;
+  color: $p-color;
+}
+
+h3 {
+  font-size: 1.3125rem;
+  margin-bottom: 1.25rem;
+}
+
+.h1-description {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: $accent-color;
+}
+
+#faq {
+  margin-bottom: 70px;
+}
+
+.faq__intro {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.faq__description {
+  color: $accent-color;
+  font-size: 1.125rem;
+}
+
+.accordeon-container {
+  padding: 0;
+}
+
+.accordeon-container > div {
+  label {
+    cursor: pointer;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 1.125rem;
+    color: $p-color;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $light-accent;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.accordeon-container article {
+  // margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  color: $accent-color;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.accordeon-container input {
+  display: none;
+}
+
+.accordeon-container input:checked ~ article {
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  height: auto;
+}
+
+// FONT ANIMATION
+
+.header__main-text {
+  display: block;
+  transform: perspective(500px) rotateX(13deg) scale3d(0.8, 0.8, 1);
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.header__main-text_animated {
+  transform: rotateX(0);
+  opacity: 1;
+}
+
+// ASPECT RATIO CSS
+
+@media (min-aspect-ratio: 8/3) {
+  .pricing-animate {
+    margin-top: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,40 @@
+// Animation
+#svg {
+    z-index: 0;
+    position: absolute;
+    transform: translate(22%, -17%);
+    width: 100%;
+  }
+  
+
+#path1, #path2 ,#path3,#path4, #path5 ,#path6,#path7 {
+    fill: transparent;
+    stroke:#DACCFF;
+    stroke-width:2px;
+}
+
+// Animation
+#svg-header {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    transform: translate(0, 0);
+}
+  
+
+#path-h-1, #path-h-2 ,#path-h-3,#path-h-4, #path-h-5 ,#path-h-6,#path-h-7 {
+    fill: transparent;
+    stroke:#FFE7D7;
+    stroke-width:4px;
+}
+
+@media (max-width:600px) {
+    #svg-header {
+        height:100vh;
+    }
+
+    #svg {
+        transform: translate(1%, -42%);
+      }
+}

@@ -1,0 +1,116 @@
+// ПЕРЕКЛЮЧАТЕЛЬ
+.toggler-caption span{
+    color:$accent-color;
+}
+
+.toggler-caption__svg{
+    width: 30px;
+    height: 40px;
+    background-color: $accent-color;
+    mask: url(../img/arrow.svg) no-repeat center;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 55px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    
+  }
+
+
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:$accent-color;
+    font-weight:500;
+    background-color: $light-accent;
+    transition: .3s;
+  }
+
+    // Заголовок переключателя
+    .toggler-caption {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        color: $primary-color;
+        position: absolute;
+        top: -68px;
+        right: -49px;
+    }
+  
+  .slider:before {
+    position: absolute;
+    content: "Monthly";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    transition: .2s;
+    box-shadow: 1px 3px 5px rgba(5, 5, 5, 0.15);
+  }
+  
+  input:checked + .slider {
+    color:$primary-color;
+  }
+
+  input:checked ~ .toggler-caption {
+    span {
+        transition: .6s;
+        color:$primary-color;
+    }
+    .toggler-caption__svg {
+        transition: .6s;
+        background-color: $primary-color;
+    } 
+  }
+
+  
+  
+  input:focus + .slider {
+
+  }
+  
+  input:checked + .slider:before {
+    content:"Yearly";
+    transform: translateX(32px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 50px;
+  }
+  
+  .slider.round:before {
+    border-radius: 30px;
+  }
+
+  
+
+  // Стили для переключателя на мобильных
+  #toggler-small {
+    .toggler-caption {
+      top: -28px;
+      right: 10px;
+    }
+  }
+
+
+

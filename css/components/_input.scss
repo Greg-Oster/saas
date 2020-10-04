@@ -1,0 +1,26 @@
+.subscribe__header {
+    margin-bottom:30px;
+    color:$opacity-bg-font_start;
+}
+
+.subscribe__text {
+    margin-bottom:30px;
+}
+
+.subscribe__form {
+    display:flex;
+}
+
+input {
+    padding: 12px 28px;
+    // margin: 0;
+    margin-right:20px;
+    box-sizing: border-box; 
+
+    display:inline-block;
+
+    &:focus {
+        outline: $primary-color auto 1px;
+        outline-offset: 0px;
+    }
+}

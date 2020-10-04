@@ -1,0 +1,28 @@
+.social-links {
+    display: inline-block;
+
+    ul {
+        display:flex;
+    }
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    color: $opacity-bg-font_start;
+    transition: color 0.3s;
+
+    &:hover {
+        color:$opacity-bg-font_end;
+    }
+}
+
+.social-links__list {
+    margin-bottom:0;
+}
+
+.social-links__item {
+    &:not(:last-child){
+        margin-right:25px;
+    }
+}

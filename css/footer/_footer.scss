@@ -1,0 +1,30 @@
+footer {
+    overflow: overlay;
+    color:#e2e2e2;
+    background-color:$footer-bg;
+
+    // Copy e.t.c
+    small {
+        color:$opacity-bg-font_start;
+        font-size: 90%;
+    }
+
+    
+    a{
+        color:#e2e2e2;
+        font-weight:400;
+    }
+
+    h5 {
+        text-transform: uppercase;
+    }
+
+
+}
+
+// Content under link section or sub-footer
+.footer-under {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:80px;
+}

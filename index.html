@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Gregory Oster, ranni91@gmail.com">
+    <meta name="designer" content="Oğuz Yağız Kara">
+    <meta name="description" content="just for job application"/>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- CSS for text-animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- Compiled CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Font - roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SaaS proto</title>
+  </head>
+
+  <header>
+    <!-- Blub animation -->
+    <svg id="svg-header" viewBox="0 0 1500 1500">
+      <path id="path-h-1"></path>
+      <path id="path-h-2"></path>
+      <path id="path-h-3"></path>
+      <path id="path-h-4"></path>
+      <path id="path-h-5"></path>
+      <path id="path-h-6"></path>
+      <path id="path-h-7"></path>
+    </svg>
+
+    <nav class="navbar navbar-expand-lg" id="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#" aria-label="logo">
+          <img
+            src="img/logo.svg"
+            width="30"
+            height="30"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="nav-toggle"
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="material-icons">menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link login" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-nav" href="#" role="button"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container header-content">
+      <h1>
+        <span class="header__main-text">Simple pricing</span
+        ><span class="header__main-text">for everyone</span>
+      </h1>
+      <p class="h1-description">Pricing built for businesses of all sizes.</p>
+      <p class="h1-description">Always know what you’ll pay.</p>
+    </div>
+  </header>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto pricing-table anycontent">
+            <div class="pricing-table__head">
+              <div class="pricing-table__toggler">
+                <div class="toggler">
+                  <label class="switch">
+                    <input type="checkbox" id="toggler" checked="true" />
+                    <span class="slider round"></span>
+
+                    <label class="toggler-caption">
+                      <span>Save 20%</span>
+                      <div class="toggler-caption__svg"></div>
+                    </label>
+                  </label>
+                </div>
+              </div>
+              <div class="pricing-table__head__content">
+                <h3 class="pricing-table__content__heading">Free</h3>
+                <span class="pricing-table__content__price">$0</span>
+                <span class="pricing-table__content__details">Per month</span>
+                <button class="btn button-outline-primary">Get Started</button>
+              </div>
+              <div
+                class="pricing-table__head__content pricing-table__head__content_featured"
+              >
+                <h3 class="pricing-table__content__heading">Premium</h3>
+                <span
+                  class="pricing-table__content__price pricing-table__content__price_year"
+                  ><span>$</span>29</span
+                >
+                <span
+                  class="pricing-table__content__price pricing-table__content__price_month"
+                  ><span>$</span>35</span
+                >
+                <span class="pricing-table__content__details">Per month</span>
+                <button class="btn button-outline-primary">Get Started</button>
+              </div>
+              <div class="pricing-table__head__content">
+                <h3 class="pricing-table__content__heading">Enterprise</h3>
+                <span
+                  class="pricing-table__content__price pricing-table__content__price_year"
+                  ><span>$</span>100</span
+                >
+                <span
+                  class="pricing-table__content__price pricing-table__content__price_month"
+                  ><span>$</span>120</span
+                >
+                <span class="pricing-table__content__details">Per month</span>
+                <button class="btn button-outline-primary">Get Started</button>
+              </div>
+            </div>
+            <div class="pricing-table__body">
+              <div class="pricing-table__item pricing-table__rates">
+                <div class="pricing-table__item__header">
+                  <!-- <h3>Price</h3> -->
+                  <div
+                    class="pricing-table__toggler pricing-table__toggler_small"
+                    id="toggler-small"
+                  >
+                    <div class="toggler">
+                      <label class="switch">
+                        <input
+                          type="checkbox"
+                          id="toggler-small-checkbox"
+                          checked="true"
+                        />
+                        <span class="slider round"></span>
+
+                        <label class="toggler-caption">
+                          <span>Save 20%</span>
+                        </label>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="pricing-table__item__presence pricing-table__item-rates"><span>free</span></div>
+                      <div class="pricing-table__item__presence pricing-table__item-rates">
+                        <span>$29</span>
+                      </div>
+                      <div class="pricing-table__item__presence pricing-table__item-rates">
+                        <span>$100</span>
+                      </div> -->
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Product Reviews</h3>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Photo Reviews</h3>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Checkout Reviews</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Video Reviews</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Community Q/A</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Services</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Basic Support</h3>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Migration Support</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Dedicated Technical Support</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+              <div class="pricing-table__item">
+                <div class="pricing-table__item__header">
+                  <h3>Video Dedicated Success Support</h3>
+                </div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence"></div>
+                <div class="pricing-table__item__presence">
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="faq__intro">
+          <h2>Frequently Asked Questions</h2>
+          <p class="faq__description">
+            if you are hesitating, do not worry - we are here to explain<br />
+            everything you might want to know. Let us help!
+          </p>
+        </div>
+        <div class="row">
+          <div class="accordeon col-lg-8 mx-auto">
+            <div class="accordeon__item">
+              <div class="accordeon__item-toggle">
+                <h5 class="accordeon__item-toggle-header">
+                  Is there a difference between Ghost.io and a traditional bank?
+                </h5>
+                <span class="material-icons">add_circle_outline</span>
+              </div>
+              <article class="accordeon__item-content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus expedita rem vero quod, veritatis aut!
+                </p>
+              </article>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__item-toggle">
+                <h5 class="accordeon__item-toggle-header">
+                  Who can open a Ghost.io account?
+                </h5>
+                <span class="material-icons">add_circle_outline</span>
+              </div>
+              <article class="accordeon__item-content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus expedita rem vero quod, veritatis aut!
+                </p>
+              </article>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__item-toggle">
+                <h5 class="accordeon__item-toggle-header">
+                  How to open a Ghost.io account?
+                </h5>
+                <span class="material-icons">add_circle_outline</span>
+              </div>
+              <article class="accordeon__item-content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus expedita rem vero quod, veritatis aut!
+                </p>
+              </article>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__item-toggle">
+                <h5 class="accordeon__item-toggle-header">
+                  What if i withdraw money abroad?
+                </h5>
+                <span class="material-icons">add_circle_outline</span>
+              </div>
+              <article class="accordeon__item-content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus expedita rem vero quod, veritatis aut!
+                </p>
+              </article>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__item-toggle">
+                <h5 class="accordeon__item-toggle-header">
+                  Can i cancel my subscription or switch to another plan
+                  anytime?
+                </h5>
+                <span class="material-icons">add_circle_outline</span>
+              </div>
+              <article class="accordeon__item-content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus expedita rem vero quod, veritatis aut!
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support-center-section">
+      <div class="container support-center">
+        <div class="row">
+          <div class="support-center__content col-lg-9 offset-lg-1">
+            <h4 class="support-center__text">
+              Have a specific question?<br /><span
+                >Check out our Support Center</span
+              >
+            </h4>
+            <button class="btn support-center__btn">Ask a Question</button>
+
+            <svg id="svg" viewBox="0 0 1500 1500">
+              <path id="path1"></path>
+              <path id="path2"></path>
+              <path id="path3"></path>
+              <path id="path4"></path>
+              <path id="path5"></path>
+              <path id="path6"></path>
+              <path id="path7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-nav">
+          <div class="col-lg-2 col-sm-3 col-6">
+            <h5 class="footer-nav__header">SOLUTIONS</h5>
+            <ul class="footer-nav__links">
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Insights</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <h5 class="footer-nav__header">SUPPORT</h5>
+            <ul class="footer-nav__links">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">API Status</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <h5 class="footer-nav__header">COMPANY</h5>
+            <ul class="footer-nav__links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <h5 class="footer-nav__header">LEGAL</h5>
+            <ul class="footer-nav__links">
+              <li><a href="#">Claim</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="subscribe col-lg">
+            <h5 class="subscribe__header">Subscribe to our newsletter</h5>
+            <p class="subscribe__text">
+              The latest news, articles, and resources, sent to your inbox
+              weekly.
+            </p>
+            <form action="" class="subscribe__form">
+              <label for="user_email" class="visuallyhidden"></label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="subscribe__input"
+                name="user_email"
+                id="user_email"
+              />
+              <button class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-under">
+          <small>@2020 Ghost, Inc. All rights reserved.</small>
+          <div class="social-links">
+            <ul class="social-links__list">
+              <li class="social-links__item">
+                <a class="social-icons" href="#" aria-label="icon-facebook">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-icons" href="#" aria-label="icon-Intsagram">
+                  <span class="icon-Intsagram"></span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-icons" href="#" aria-label="icon-twitter">
+                  <span class="icon-twitter"></span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-icons" href="#" aria-label="icon-dribbble">
+                  <span class="icon-dribbble"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+    src="js/jquery-3.5.1.slim.min.js"></script>
+    </script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS for text-animation -->
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+
+    <script src="js/stickynavbar.js"></script>
+    <script src="js/text-animations.js"></script>
+
+    <script src="js/collapseElement.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="js/buble.js"></script>
+    <script src="js/buble-header.js"></script>
+
+    <script src="js/price-toggler.js"></script>
+  </body>
+</html>
